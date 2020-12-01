@@ -1,0 +1,23 @@
+.m-actor-name{
+    font-family: none;
+    color: white;
+    font-size: 20px;
+}
+.m-actor-role{
+    color: white;
+    font-size: 15px;
+    font-family: fangsong;
+}
+.m-actor-info{
+    right: 0;
+    background-color: black;
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+    left: 0;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,1,11,1) 43%, rgba(2,3,33,1) 63%, rgba(170,4,12,1) 100%);
+
+}
+.pd-a-5{
+    padding: 0px 5px !important;
+}

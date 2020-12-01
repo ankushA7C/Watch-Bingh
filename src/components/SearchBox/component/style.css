@@ -1,0 +1,36 @@
+.searchBox-container{
+    height: 300px;
+    border: 1px solid black;
+    /* background-image: linear-gradient(to right, rgb(2 0 36 / 56%) 0%, rgb(170 4 12 / 41%) 100%),url(../../../assets/images/searchBox.jpg);
+    background-size: cover; */
+    background-image: linear-gradient(to right, rgb(2 0 36 / 56%) 0%, rgb(170 4 12 / 41%) 100%);
+}
+.movie-name{
+    color: white;
+    font-size: 40px;
+    font-family: none;
+}
+.release-date{
+    font-family: none;
+    color: white;
+    font-size: 20px;
+}
+.popularity{
+    font-size: 30px;
+    color: white;
+    font-family: fantasy;
+}
+.movie-desc{
+    color: white;
+    font-size: 20px;
+    font-family: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100%; 
+}
+.pd-50{
+    padding: 50px;
+}
+.h-100{
+    height: 100%;
+}

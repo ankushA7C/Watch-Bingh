@@ -1,0 +1,17 @@
+.cast-container{
+    color: white;
+    font-size: 30px;
+    height: 50px;
+    font-family: none;
+}
+.cast-all{
+    color: white;
+    font-size: 25px;
+    height: 50px;
+    font-family: none;
+    cursor: pointer;
+    text-align: right;
+}
+.cast-all:hover{
+    text-decoration: underline;
+}

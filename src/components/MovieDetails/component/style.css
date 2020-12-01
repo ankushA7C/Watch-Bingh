@@ -1,0 +1,75 @@
+
+.movie-poster{
+    height: 400px;
+    padding: 10px;
+    text-align: center;
+}
+.movie-details-container{
+    padding: 50px;
+    height: 400px;
+}
+.m-d-tiltle{
+    color: white;
+    font-size: 30px;
+    font-family: none;
+}
+.m-d-release{
+    color: white;
+    font-size: 20px;
+    font-family: none;
+}
+.m-d-popularity{
+    color: white;
+    font-size: 25px;
+    font-family: fantasy;
+    text-align: center;
+}
+.m-d-popularity-title{
+    color: white;
+    font-size: 20px;
+    font-family: fantasy;
+    text-align: center;
+}
+.m-d-total-votes{
+    color: white;
+    font-size: 25px;
+    font-family: fantasy;
+    text-align: center;
+}
+.m-d-total-votes-title{
+    color: white;
+    font-size: 20px;
+    font-family: fantasy;
+    text-align: center;
+}
+.m-d-vote-avg{
+    color: white;
+    font-size: 25px;
+    font-family: fantasy;
+    text-align: center;
+}
+.m-d-vote-avg-title{
+    color: white;
+    font-size: 20px;
+    font-family: fantasy;
+    text-align: center;
+}
+.m-d-desc{
+    color: white;
+    font-size: 20px;
+    font-family: none;
+    margin-bottom: 10px;
+
+}
+.m-popular{
+    color: white;
+    font-size: 70px;
+}
+.text-align-center{
+    text-align: center;
+}
+.poster-img{
+    width: 90%;
+    border-radius: 10px;
+    height: 100%;
+}
