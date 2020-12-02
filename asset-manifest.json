@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Watch-Bingh/static/css/main.c3e8f42f.chunk.css",
-    "main.js": "/Watch-Bingh/static/js/main.e0f54c1d.chunk.js",
-    "main.js.map": "/Watch-Bingh/static/js/main.e0f54c1d.chunk.js.map",
+    "main.js": "/Watch-Bingh/static/js/main.a5537021.chunk.js",
+    "main.js.map": "/Watch-Bingh/static/js/main.a5537021.chunk.js.map",
     "runtime-main.js": "/Watch-Bingh/static/js/runtime-main.19748b11.js",
     "runtime-main.js.map": "/Watch-Bingh/static/js/runtime-main.19748b11.js.map",
     "static/css/2.674c27c3.chunk.css": "/Watch-Bingh/static/css/2.674c27c3.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.674c27c3.chunk.css",
     "static/js/2.938b8a06.chunk.js",
     "static/css/main.c3e8f42f.chunk.css",
-    "static/js/main.e0f54c1d.chunk.js"
+    "static/js/main.a5537021.chunk.js"
   ]
 }
