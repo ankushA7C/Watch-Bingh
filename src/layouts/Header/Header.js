@@ -6,7 +6,6 @@ import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
-import InputBase from '@material-ui/core/InputBase';
 
 export default function Header(props) {
     const [search, setSearch] = React.useState('');
@@ -36,8 +35,8 @@ export default function Header(props) {
                     <MenuIcon />
                 </IconButton>
                 <Typography variant="h6" noWrap>
-                    Bing Watch
-          </Typography>
+                    <a href="/Watch-Bingh"> Bing Watch</a>
+                </Typography>
                 <div className={props.classes.search}>
                     <div className={props.classes.searchIcon}>
                         <SearchIcon />
@@ -50,14 +49,6 @@ export default function Header(props) {
                         value={search}
                         onKeyPress={keyPress}
                     />
-                    {/* <InputBase
-                        placeholder="Search…"
-                        classes={{
-                            root: props.classes.inputRoot,
-                            input: props.classes.inputInput,
-                        }}
-                        inputProps={{ 'aria-label': 'search' }}
-                    /> */}
                 </div>
             </Toolbar>
 

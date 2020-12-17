@@ -23,11 +23,10 @@ function MovieCard(props) {
     }
     const onViewClick = (movie) => {
         props.history.push({
-            pathname: '/view',
+            pathname: '/Watch-Bingh/view',
             search: '?query=viewDetails',
             state: { detail: movie }
         })
-        console.log("Clicked:", movie);
     }
     return (
         <div className="col-md-2 pd-5">

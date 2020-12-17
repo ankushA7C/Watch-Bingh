@@ -1,18 +1,15 @@
 import React from 'react';
 import clsx from 'clsx';
 import { fade, makeStyles, useTheme } from '@material-ui/core/styles';
-import { BrowserRouter, Router, Route, Switch } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
+import { Route } from 'react-router-dom';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Header from '../Header/Header';
 import SideNav from '../SideNav/SideNav';
-import SearchBox from '../../components/SearchBox/index';
-import MovieList from "../../components/MovieList/index"
 import Home from "../../Pages/Home/Home"
 import View from "../../Pages/View/View"
+import { withRouter } from 'react-router';
 import Search from "../../Pages/Search/Search"
 
-const hist = createBrowserHistory();
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -62,6 +59,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'flex-end',
     },
     content: {
+        minHeight: '657px',
         background: '#02001d',
         flexGrow: 1,
         padding: theme.spacing(3),
@@ -135,10 +133,24 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: 'none',
         background: 'none',
         paddingLeft: '40px'
+    },
+    loaderContainer: {
+        top: '0',
+        height: '100%',
+        width: '100%',
+        background: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,1,11,1) 43%, rgba(2,3,33,1) 63%, rgba(170,4,12,1) 100%)',
+        position: 'fixed',
+        left: '0',
+        zIndex: '10'
+    },
+    loader: {
+        top: '45%',
+        left: '45%',
+        position: 'absolute'
     }
 }));
 
-export default function AppLayout() {
+function AppLayout(props) {
     const classes = useStyles();
     const theme = useTheme();
     const [open, setOpen] = React.useState(false);
@@ -151,12 +163,16 @@ export default function AppLayout() {
         setOpen(false);
     };
     const searchCallback = (query) => {
-        alert(query);
+        props.history.push({
+            pathname: '/Watch-Bingh/search',
+            search: '?query=' + query,
+            state: { query: query }
+        });
     }
     return (
         <div className={classes.root}>
             <CssBaseline />
-            <Header classes={classes} open={open} handleDrawerOpen={handleDrawerOpen} searchCallback={searchCallback} />
+            <Header classes={classes} open={open} handleDrawerOpen={handleDrawerOpen} searchCallback={searchCallback} {...props} />
             <SideNav classes={classes} open={open} theme={theme} handleDrawerClose={handleDrawerClose} />
             <main
                 className={clsx(classes.content, {
@@ -164,20 +180,12 @@ export default function AppLayout() {
                 })}
             >
                 <div className={classes.heading} />
-
-                <BrowserRouter >
-                    {/* <Switch> */}
-                    <Route exact path="/" render={(props) => <Home {...props} />} />
-                    <Route exact path="/view" render={(props) => <View {...props} />} />
-                    <Route exact path="/search" render={(props) => <Search {...props} />} />
-                    {/* <Redirect to="/admin/dashboard" /> */}
-                    {/* </Switch> */}
-                </BrowserRouter>
-                {/* <SearchBox />
-                <div className={classes.movieList}>Movie List</div>
-                <MovieList /> */}
-
+                <Route exact path="/Watch-Bingh" render={(props) => <Home {...props} />} />
+                <Route exact path="/Watch-Bingh/view" render={(props) => <View {...props} />} />
+                <Route exact path="/Watch-Bingh/search" render={(props) => <Search {...props} />} />
             </main>
+
         </div>
     );
 }
+export default withRouter(AppLayout);

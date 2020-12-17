@@ -4,14 +4,15 @@ import "./style.css"
 import YoutubeVedio from "../../components/YoutubeVedio/index"
 import MovieDetails from "../../components/MovieDetails/index"
 import Cast from "../../components/Cast/index"
+import LoaderObject from "../../components/Loader/index"
 
 export default function View(props) {
     const [youtubeLink, setYoutubeLink] = React.useState('');
     const [cast, setCast] = React.useState([]);
     const [viewAllCast, setViewAllCast] = React.useState(false);
+    const [isLoader, setIsLoader] = React.useState(true);
 
     useEffect(() => {
-        console.log("VIEWW:", props);
         getTrailer(props.location.state.detail.id);
         getCast(props.location.state.detail.id);
     }, [])
@@ -19,7 +20,6 @@ export default function View(props) {
         try {
             let URl = 'https://api.themoviedb.org/3/movie/' + id + '/videos?api_key=5dcf7f28a88be0edc01bbbde06f024ab&language=en-US';
             const response = await axios.get(URl);
-            console.log("Response", response.data.results[0].key);
             setYoutubeLink(response.data.results[0].key);
         } catch (error) {
             console.log(error);
@@ -29,8 +29,8 @@ export default function View(props) {
         try {
             let URl = 'https://api.themoviedb.org/3/movie/' + id + '/credits?api_key=5dcf7f28a88be0edc01bbbde06f024ab&language=en-US';
             const response = await axios.get(URl);
-            console.log("Cast", response.data.cast);
             setCast(response.data.cast);
+            setIsLoader(false);
         } catch (error) {
             console.log(error);
         }
@@ -41,6 +41,7 @@ export default function View(props) {
     }
     return (
         <>
+            { isLoader && <LoaderObject />}
             <YoutubeVedio youtubeLink={youtubeLink} />
             <hr></hr>
             <MovieDetails {...props} />
