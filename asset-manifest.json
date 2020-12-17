@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Watch-Bingh/static/css/main.6752037a.chunk.css",
-    "main.js": "/Watch-Bingh/static/js/main.447c867a.chunk.js",
-    "main.js.map": "/Watch-Bingh/static/js/main.447c867a.chunk.js.map",
-    "runtime-main.js": "/Watch-Bingh/static/js/runtime-main.83decbb4.js",
-    "runtime-main.js.map": "/Watch-Bingh/static/js/runtime-main.83decbb4.js.map",
+    "main.css": "/Watch-Bingh/static/css/main.b38f82da.chunk.css",
+    "main.js": "/Watch-Bingh/static/js/main.1a2f60f8.chunk.js",
+    "main.js.map": "/Watch-Bingh/static/js/main.1a2f60f8.chunk.js.map",
+    "runtime-main.js": "/Watch-Bingh/static/js/runtime-main.7cd181ce.js",
+    "runtime-main.js.map": "/Watch-Bingh/static/js/runtime-main.7cd181ce.js.map",
     "static/css/2.674c27c3.chunk.css": "/Watch-Bingh/static/css/2.674c27c3.chunk.css",
-    "static/js/2.4aec5d3e.chunk.js": "/Watch-Bingh/static/js/2.4aec5d3e.chunk.js",
-    "static/js/2.4aec5d3e.chunk.js.map": "/Watch-Bingh/static/js/2.4aec5d3e.chunk.js.map",
-    "static/js/3.d4bea832.chunk.js": "/Watch-Bingh/static/js/3.d4bea832.chunk.js",
-    "static/js/3.d4bea832.chunk.js.map": "/Watch-Bingh/static/js/3.d4bea832.chunk.js.map",
+    "static/js/2.7b99d298.chunk.js": "/Watch-Bingh/static/js/2.7b99d298.chunk.js",
+    "static/js/2.7b99d298.chunk.js.map": "/Watch-Bingh/static/js/2.7b99d298.chunk.js.map",
+    "static/js/3.1bab42a9.chunk.js": "/Watch-Bingh/static/js/3.1bab42a9.chunk.js",
+    "static/js/3.1bab42a9.chunk.js.map": "/Watch-Bingh/static/js/3.1bab42a9.chunk.js.map",
     "index.html": "/Watch-Bingh/index.html",
     "static/css/2.674c27c3.chunk.css.map": "/Watch-Bingh/static/css/2.674c27c3.chunk.css.map",
-    "static/css/main.6752037a.chunk.css.map": "/Watch-Bingh/static/css/main.6752037a.chunk.css.map",
-    "static/js/2.4aec5d3e.chunk.js.LICENSE.txt": "/Watch-Bingh/static/js/2.4aec5d3e.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/Watch-Bingh/static/media/logo.6ce24c58.svg"
+    "static/css/main.b38f82da.chunk.css.map": "/Watch-Bingh/static/css/main.b38f82da.chunk.css.map",
+    "static/js/2.7b99d298.chunk.js.LICENSE.txt": "/Watch-Bingh/static/js/2.7b99d298.chunk.js.LICENSE.txt",
+    "static/media/error.af3fd069.png": "/Watch-Bingh/static/media/error.af3fd069.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.83decbb4.js",
+    "static/js/runtime-main.7cd181ce.js",
     "static/css/2.674c27c3.chunk.css",
-    "static/js/2.4aec5d3e.chunk.js",
-    "static/css/main.6752037a.chunk.css",
-    "static/js/main.447c867a.chunk.js"
+    "static/js/2.7b99d298.chunk.js",
+    "static/css/main.b38f82da.chunk.css",
+    "static/js/main.1a2f60f8.chunk.js"
   ]
 }
